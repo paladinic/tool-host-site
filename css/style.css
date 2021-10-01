@@ -100,12 +100,14 @@ body{
 }
 
 .footer{
-  text-align: left;
-  padding: 10px 20px;
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 30px 20px;
   position: relative;
   display: block;
   bottom: 0;
   font-size: .8em;
-  font-weight: 300;
+  font-weight: 600;
   margin: 5px auto;
+  font-family:  'Montserrat Alternates', sans-serif;
 }
