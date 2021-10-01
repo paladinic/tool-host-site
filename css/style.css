@@ -18,7 +18,16 @@ body{
   animation: gradient 60s ease infinite;
   color: white !important;
   box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.5);
-  transition: .2s
+  transition: .2s;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+  padding: 27px 20px;
+}
+.header a:hover{
+  color: rgb(222, 223, 168);
+  transition: .3s;
 }
 
 @keyframes gradient {
@@ -33,22 +42,6 @@ body{
 	}
 }
 
-.account,
-.dropbtn{
-  margin: auto;
-  text-decoration: none;
-  padding: 10px 20px 0;
-  width: 150px;
-  text-align: center;
-  float: left;
-  font-size: 1em;
-  font-weight: 300 !important;
-  transition: .1s;
-
-  padding: 10px 20px 0;
-  color: white;
-}
-
 #logo-img{
   height: 55px;
   width: 55px;
@@ -61,7 +54,7 @@ body{
  font-size: 2.5rem !important;
  font-family: 'Montserrat Alternates', sans-serif;
  width: 200px !important;
- padding: 10px 20px 0;
+ padding: 10px 40px 0 20px;
  background: linear-gradient(45deg, white 50%,#ffff00 , #ff0042,#009cff,#4aff00,white, #3b002c);
  background-size: 200%;
   -webkit-background-clip: text;
@@ -70,63 +63,6 @@ body{
 }
 #logo:hover {
  background-position: -200%;
-}
-
-.navbar{
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 17px;
-}
-.navbar div{
-  width: 110px;
-}
-
-.dropdown{
-  position: relative;
-  display: inline-block;
-}
-.dropdown-item {
-  display:block;
-  margin: 15px 0;
-  font-size: 1.1em;
-  font-weight: 700;
-}
-.dropdown-item:hover{
-  text-decoration: underline;
-}
-  .dropdown-content{
-  margin-top: 20px;
-  display: none;
-  height: 80px;
-  position: absolute;
-  min-width: 140px;
-  z-index: 1;
-  background-color: #f1f1f1;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  color: #363636;
-  text-align: center;
-  padding-bottom: 20px;
-}
-.dropdown-item{
-  height:0;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  color:  #363636 !important;
-  float: none  !important;
-  font-size: .8em  !important;
-  padding: 10px;
-}
-
-.dropbtn:hover{
-  color:#d6d6d6;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-content:hover .dropdown-content {
-  display: block;
 }
 
 .content{
@@ -142,7 +78,6 @@ body{
 .home-row div{
   margin: 5%;
 }
-
 .desc-icons{
   display: flex;
   justify-content:  center;
@@ -153,23 +88,15 @@ body{
   width: 130px;
   height: 130px;
   margin: 0px 30px 20px;
-  /* z-index: -100 !important; */
 }
-
 .home-desc{
   text-align: left;
   margin: auto;
   width: 100%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family:  'Montserrat Alternates', sans-serif;
   display: block;
   font-size: 2.2em;
-  font-weight: 100;
-}
-.home-desc span{
   font-weight: 600;
-}
-
-.desc2{
 }
 
 .footer{
