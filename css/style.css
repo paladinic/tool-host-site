@@ -1,5 +1,5 @@
-html{
-   height: 100%;}
+html{height: 100%;}
+
 body{
   font-family: 'Josefin Sans', sans-serif;
   background: white;
@@ -12,72 +12,49 @@ body{
   position: fixed;
   width: 100%;
   display: flex;
-  justify-content: center;
-  background: linear-gradient(-25deg,#1c0022,#2d67b6,#1c0022,#ff003d,#1c0022,#0a9c4c,#1c0022);
+  justify-content: left;
+  background-color: white;
   background-size: 2000% 2000%;
   animation: gradient 60s ease infinite;
-  color: white !important;
-  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
   transition: .2s;
+  padding-left: 12%;
 }
 .header a{
-  color: white;
   text-decoration: none;
+  color: #141414;
   padding: 27px 20px;
+  transition: .3s;
 }
 .header a:hover{
-  color: rgb(222, 223, 168);
-  transition: .3s;
+  text-decoration: underline;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 50deg 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: -150deg 0% 50%;
-	}
-}
-
-#logo-img{
-  height: 55px;
-  width: 55px;
-  padding-right: 20px;
-  margin: 10px 0;
-  transition: .3s;
-}
 #logo{
  font-weight: 700 !important;
  font-size: 2.5rem !important;
  font-family: 'Montserrat Alternates', sans-serif;
  width: 200px !important;
  padding: 10px 40px 0 20px;
- background: linear-gradient(45deg, white 50%,#ffff00 , #ff0042,#009cff,#4aff00,white, #3b002c);
- background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 0.8s ease-out;
-}
-#logo:hover {
- background-position: -200%;
 }
 
 .content{
   padding-top: 100px;
 }
-
+.home-row-1,
 .home-row{
   display: flex;
   justify-content: left;
   height: 250px;
-  padding: 10px 7%;
 }
-.home-row div{
-  margin: 5%;
+.home-row{
+  padding: 10px 10%;
+  border-top: dashed 1px grey;
 }
+.home-row-1{
+  padding: 10px 15%;
+}
+
 .desc-icons{
   display: flex;
   justify-content:  center;
@@ -89,6 +66,7 @@ body{
   height: 130px;
   margin: 0px 30px 20px;
 }
+
 .home-desc{
   text-align: left;
   margin: auto;
@@ -97,14 +75,31 @@ body{
   display: block;
   font-size: 2.2em;
   font-weight: 600;
+  margin: 65px 20px 20px;
+}
+.home-desc span{
+  text-decoration: underline;
+  transition: .2s;
+}
+.home-desc span:hover{
+  font-size: 1.1em;
+}
+.desc2{
+  width: 50%;
+  padding: 20px 5% 20px;
+}
+.desc2:nth-child(2){
+  border-left: 1px dashed grey;
+  padding-left: 7%;
+
 }
 
 .docs-container{
-  padding: 10px 5%;
+  padding: 10px 15%;
 }
 
 .footer{
-  border-top: 1px solid gray;
+  border-top: dashed 1px grey;
   text-align: center;
   padding: 30px 20px;
   position: relative;
