@@ -8,6 +8,14 @@ body{
   color: #141414;
 }
 
+a{
+  text-decoration: none;
+  color: #141414;
+}
+a:hover{
+  text-decoration: underline;
+}
+
 .header{
   position: fixed;
   width: 100%;
@@ -21,37 +29,32 @@ body{
   padding-left: 12%;
 }
 .header a{
-  text-decoration: none;
-  color: #141414;
   padding: 27px 20px;
   transition: .3s;
 }
-.header a:hover{
-  text-decoration: underline;
-}
 
-#logo{
+.logo{
  font-weight: 700 !important;
  font-size: 2.5rem !important;
  font-family: 'Montserrat Alternates', sans-serif;
  width: 200px !important;
- padding: 10px 40px 0 20px;
+ padding: 10px 40px 0 20px !important;
 }
 
 .content{
   padding-top: 100px;
 }
-.home-row-1,
-.home-row{
+.row-1,
+.row{
   display: flex;
   justify-content: left;
   height: 250px;
 }
-.home-row{
+.row{
   padding: 10px 10%;
   border-top: dashed 1px grey;
 }
-.home-row-1{
+.row-1{
   padding: 10px 15%;
 }
 
