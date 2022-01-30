@@ -9,14 +9,6 @@ body{
   color: #242424;
 }
 
-a{
-  text-decoration: none;
-  color: #141414;
-}
-a:hover{
-  text-decoration: underline;
-}
-
 .header{
   font-weight: bold;
   position: fixed;
@@ -39,6 +31,9 @@ a:hover{
   font-size: 18px;
   width: 200px;
 }
+.header a:hover{
+  text-decoration: underline;
+}
 
 #logo{
  padding: 0;
@@ -60,8 +55,8 @@ a:hover{
 .content{
   padding-top: 100px;
 }
-.row-1,
-.row{
+.home-row-1,
+.home-row{
   display: flex;
   justify-content: left;
 }
