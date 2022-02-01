@@ -58,7 +58,7 @@ body{
 .home-row-1,
 .home-row{
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 .home-row{
   height: 250px;
