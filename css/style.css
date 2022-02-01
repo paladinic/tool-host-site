@@ -70,6 +70,10 @@ body{
   padding: 10px 15%;
 }
 
+.desc-col{
+  text-align: center;
+  display:table;
+}
 .desc-icons{
   display: flex;
   justify-content:  center;
@@ -79,7 +83,7 @@ body{
 .desc-icons img{
   width: 130px;
   height: 130px;
-  margin: 0px 30px 20px;
+  margin: 20px 30px 20px;
   transition: .2s;
 }
 
@@ -88,12 +92,14 @@ body{
   margin: auto;
   width: 100%;
   font-family:  'Raleway', sans-serif;
-  display: block;
+  /* display: block; */
   font-size: 2em;
   letter-spacing: 2px;
   margin: auto 0;
   text-align: center;
-  line-height: 185px;
+  vertical-align: middle;
+  display: table-cell;
+  /* height: 50px; */
 }
 .home-desc span{
   /* text-decoration: underline; */
@@ -168,7 +174,7 @@ body{
     background: #5A4AE3;
 }
 .cloud:nth-child(1) {
-  -webkit-animation: cloud1 40s infinite;
+  -webkit-animation: cloud1 20s infinite;
   bottom: auto;
   top: 155px;
   right: auto;
@@ -180,7 +186,7 @@ body{
   right: auto;
 }
 .cloud:nth-child(3) {
-  -webkit-animation: cloud3 40s infinite;
+  -webkit-animation: cloud3 30s infinite;
   bottom: auto;
   top: 100px;
   right: auto;
@@ -208,4 +214,31 @@ body{
 50% {left:100px;}
 75% {left:280px;}
 100% {left: 500px;}
+}
+
+
+@media (max-width: 992px) {
+  .content{
+    padding: 0;
+  }
+  .wrapper{display:none;}
+  .header{
+    flex-direction: row;
+    justify-content: center;
+    position:sticky;
+    padding: 0;
+  }
+  .header a{
+    width:100%;
+    margin: 150px 0 40px;
+  }
+  #logo{
+    position: absolute;
+    top: 10px;
+    margin: auto;
+
+  }
+  .home-row-1{
+
+  }
 }
