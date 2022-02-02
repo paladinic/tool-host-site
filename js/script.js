@@ -14,3 +14,11 @@ function scrollFunction() {
     document.querySelector('.header a').style.fontSize = '20px';
   }
 }
+
+$(document).ready(function(){
+	$('.mobile_header_button').click(function(){
+		$(this).toggleClass('mobile_header_button_open');
+  	$('.mobile_menu').toggleClass('mobile_header_visible');
+  	$('.mobile_menu a').toggleClass('mobile_menu_visible');
+	});
+});
