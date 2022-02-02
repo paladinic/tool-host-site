@@ -3,7 +3,7 @@ html {
 }
 
 body {
-   overflow-x:hidden; 
+   overflow-x:hidden;
   font-family: 'Raleway', sans-serif;
   background: white;
   padding: 0;
@@ -444,6 +444,8 @@ body {
 
 .desc2{
     width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
   .home-row,
