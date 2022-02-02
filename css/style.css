@@ -16,6 +16,10 @@ body {
   padding: 125px 0 0;
   transition: .2s;
 }
+.mobile_visible{
+  padding: 25px 0 25px;
+}
+
 .main_header {
   display: flex;
   padding: 0 25px 0;
@@ -43,20 +47,20 @@ body {
   height: 200px !important;
   flex-direction: column;
   display: flex !important;
+  z-index: 4000;
 }
 
 .header a {
   text-decoration: none;
   color: white;
-  transition: .3s;
+  transition: .2s;
   font-family: 'Raleway';
   letter-spacing: 4px;
   font-size: 18px;
   width: 200px;
 }
 .header a:hover {
-  text-shadow: 0 1px rgba(255, 255 255, 0.9);
-  /* text-decoration: underline; */
+  text-shadow: 0px 0px 10px rgba(236, 236, 236, 0.9);
 }
 
 .main_header a {

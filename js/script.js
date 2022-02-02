@@ -18,6 +18,7 @@ function scrollFunction() {
 $(document).ready(function(){
 	$('.mobile_header_button').click(function(){
 		$(this).toggleClass('mobile_header_button_open');
+  	$('.mobile_header').toggleClass('mobile_visible');
   	$('.mobile_menu').toggleClass('mobile_header_visible');
   	$('.mobile_menu a').toggleClass('mobile_menu_visible');
 	});
