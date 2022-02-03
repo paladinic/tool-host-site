@@ -48,7 +48,7 @@ body {
 .mobile_header_visible {
   visibility: visible !important;
   opacity: 1 !important;
-  height: 200px !important;
+  height: 350px !important;
   flex-direction: column;
   display: flex !important;
   z-index: 4000;
@@ -82,8 +82,11 @@ body {
     opacity 0.2s linear;
 }
 
+
 .mobile_menu a {
-  display: none
+  margin: 30px;
+  font-size: 300%;
+  display: none;
 }
 
 .mobile_menu_visible {
@@ -215,13 +218,13 @@ body {
   display: block;
   position: absolute;
   height: 9px;
-  width: 40px;
+  width: 60px;
   background: white;
   border-radius: 9px;
   opacity: 1;
   margin: auto;
   left: 50%;
-  margin-left: -20px;
+  margin-left: -40px;
   /* left: 0; */
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -234,32 +237,28 @@ body {
 }
 
 .mobile_header_button span:nth-child(1) {
-  top: 40px;
+  top: 80px;
 }
-
 .mobile_header_button span:nth-child(2) {
-  top: 58px;
+  top: 98px;
 }
-
 .mobile_header_button span:nth-child(3) {
-  top: 76px;
+  top: 116px;
 }
 
 .mobile_header_button_open span:nth-child(1) {
-  top: 58px;
+  top: 98px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-
 .mobile_header_button_open span:nth-child(2) {
   opacity: 0;
   left: -60px;
 }
-
 .mobile_header_button_open span:nth-child(3) {
-  top: 58px;
+  top: 98px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
@@ -404,8 +403,8 @@ body {
 
   .mobile_header {
     display: block;
+    padding: 100px 0 100px;
   }
-
   .mobile_header_button {
     display: block;
     z-index: 4000;
@@ -424,16 +423,17 @@ body {
   }
 
   .header a {
-    height: 50px;
+    height: 100px;
     width: 100%;
-    margin: 5px 0 5px;
+    margin: 30px 0 0px;
   }
 
   #logo img {
     display: block;
     z-index: 4000;
     position: absolute;
-    top: 10px;
+    top: 40px;
+    left: 40px;
     margin: auto;
   }
 
@@ -441,12 +441,11 @@ body {
     height: auto;
     flex-direction: column;
   }
-
-.desc2{
+  .desc2{
     width: 100%;
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
+   }
 
   .home-row,
   .desc2 {
