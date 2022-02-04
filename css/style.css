@@ -3,6 +3,8 @@ html {
 }
 
 body {
+
+  position:relative;
    overflow-x:hidden;
   font-family: 'Raleway', sans-serif;
   background: white;
@@ -200,7 +202,7 @@ body {
   z-index: 3000;
   width: 20%;
   text-align: center;
-  height: 125px;
+  height: 200px;
   position: absolute;
   margin-left: 80%;
   -webkit-transform: rotate(0deg);
@@ -311,14 +313,12 @@ body {
   top: 155px;
   right: auto;
 }
-
 .cloud:nth-child(2) {
   -webkit-animation: cloud2 40s infinite;
   bottom: auto;
   top: 50px;
   right: auto;
 }
-
 .cloud:nth-child(3) {
   -webkit-animation: cloud3 30s infinite;
   bottom: auto;
@@ -347,7 +347,6 @@ body {
     left: 50px;
   }
 }
-
 @-webkit-keyframes cloud2 {
   0% {
     left: 200px;
@@ -369,10 +368,9 @@ body {
     left: 200px;
   }
 }
-
 @-webkit-keyframes cloud3 {
   0% {
-    left: 500px;
+    left: -200px;
   }
 
   25% {
@@ -388,7 +386,7 @@ body {
   }
 
   100% {
-    left: 500px;
+    left: -200px;
   }
 }
 
